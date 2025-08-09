@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Class Work Kanban Board </title>
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+
+    <body>
+        <div class="toolbox-cont">
+            <div class="brand-section">
+                <h1 class="brand-title">
+                    
+                    <i class="fa-solid fa-list-check"></i>
+                    TaskFlow</h1>
+            </div>
+                
+            <div class="toolbox-priority-cont">
+                <div class="color-filters">
+                    <span>Filter By Priority</span>
+                    <!-- <div class="color-filters"></div> -->
+                    <div class="lightpink color"></div>
+                    <div class="lightgreen color"></div>
+                    <div class="lightblue color"></div>
+                    <div class="black color"></div>
+                    <div class="reset color">Reset Filter</div>
+                </div>
+            </div>
+
+            <div class="action-btn-cont">
+                <div >
+                    <div class="add-btn">
+                        <i class="fa-solid fa-plus"></i>
+                        <span>Add Task</span>
+                    </div>
+
+                </div>
+                <div>
+                    <div class="delete-btn">
+                        <i class="fa-solid fa-trash"></i>
+                        <span>Delete Task</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Create the main container -->
+
+        <div class="main-cont">
+            <!-- <div class="ticket-cont">
+                <div class="ticket-color" style="background-color: lightpink;"></div>
+                <div class="ticket-id">Test</div>
+                <div class="ticket-area">12345</div>
+                <div class="ticket-lock">
+                    <i class="fa-solid fa-lock"></i>
+                </div>
+            </div> -->
+        </div>
+
+        <!-- Create modal container (Pop up part) -->
+        <div class="modal-cont">
+            <div class="model-header">
+                <h2>Create a New task</h2>
+                <p>Enter your task details and select a Priority level </p>
+            </div>
+
+            <textarea
+                class="textArea-cont"
+                placeholder="Enter you task description..."
+                >
+            </textarea>
+
+            <div class="priority-colors-container">
+                <span class="priority-label">Select Priority:</span>
+                <div class="priority-grid">
+                    <div class="lightpink priority-color active" title="High Priority">
+                        <span>H</span>
+                    </div>
+                    <div class="lightgreen priority-color" title="Medium Priority">
+                        <span>M</span>
+                    </div>
+                    <div class="lightblue priority-color" title="Low Priority">
+                        <span>L</span>
+                    </div>
+                    <div class="black priority-color" title="Critical Priority">
+                        <span>C</span>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <small>Press <kbd>Shift</kbd> to create a task</small>
+                </div>
+            </div>
+        </div>
+
+        <script src="https://unpkg.com/shortid-dist@1.0.5/dist/shortid-2.2.13.min.js"></script>
+  
+    <script src="script.js"></script>
+    </body>
+
+</html>
